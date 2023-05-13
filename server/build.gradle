@@ -1,0 +1,24 @@
+/*
+ * Gradle build configuration for specific lab module / exercise
+ */
+// enabled plugins
+plugins {
+    // Support for Java applications
+    id 'ch.zhaw.pm2.multichat.application-conventions'
+}
+
+// Project/Module information
+description = 'Uebung Multichat – Server'
+group = 'ch.zhaw.pm2'
+version = '2023'
+
+dependencies {
+    // dependency to the protocol library
+    implementation project(':protocol')
+}
+
+// Configuration for Application plugin
+application {
+    // Define the main class for the application.
+    mainClass = 'ch.zhaw.pm2.multichat.server.Server'
+}

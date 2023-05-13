@@ -1,0 +1,13 @@
+/*
+ * Gradle build configuration for specific lab module / exercise
+ */
+// enabled plugins
+plugins {
+    // Support for Java libraries
+    id 'ch.zhaw.pm2.multichat.library-conventions'
+}
+
+// Project/Module information
+description = 'Uebung Multichat – Shared Protocol Classes'
+group = 'ch.zhaw.pm2'
+version = '2023'

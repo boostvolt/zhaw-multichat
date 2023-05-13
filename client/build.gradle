@@ -1,0 +1,31 @@
+/*
+ * Gradle build configuration for specific lab module / exercise
+ */
+// enabled plugins
+plugins {
+    // Support for Java applications
+    id 'ch.zhaw.pm2.multichat.application-conventions'
+    // Support for JavaFX
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+// Project/Module information
+description = 'Uebung Multichat – Client Application'
+group = 'ch.zhaw.pm2'
+version = '2023'
+
+dependencies {
+    // dependency to the protocol library
+    implementation project(':protocol')
+}
+
+// Configuration for Application plugin
+application {
+    // Define the main class for the application.
+    mainClass = 'ch.zhaw.pm2.multichat.client.Client'
+}
+
+javafx {
+    version = '17.0.6'
+    modules = ['javafx.controls', 'javafx.fxml']
+}

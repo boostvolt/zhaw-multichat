@@ -1,0 +1,5 @@
+plugins {
+    id 'ch.zhaw.pm2.multichat.common-conventions'
+
+    id 'java-library'
+}
